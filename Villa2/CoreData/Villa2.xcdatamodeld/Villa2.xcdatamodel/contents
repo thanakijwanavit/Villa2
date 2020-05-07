@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19E266" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Categories" representedClassName="Categories" syncable="YES">
+        <attribute name="categoryList" optional="YES" attributeType="Binary"/>
+    </entity>
+    <entity name="CatLinearCore" representedClassName="CatLinearCore" syncable="YES">
+        <attribute name="children" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="includeInMenu" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="level" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="parentId" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="position" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+                <constraint value="name"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="ProductCore" representedClassName="ProductCore" syncable="YES">
+        <attribute name="cat1" optional="YES" attributeType="String"/>
+        <attribute name="cat2" optional="YES" attributeType="String"/>
+        <attribute name="cat3" optional="YES" attributeType="String"/>
+        <attribute name="cat4" optional="YES" attributeType="String"/>
+        <attribute name="categoryIds" optional="YES" attributeType="Transformable" customClassName="[String]"/>
+        <attribute name="imageData" optional="YES" attributeType="Binary"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String"/>
+        <attribute name="isFavourite" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isInCart" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isInHistory" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isRecommended" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="longDescription" optional="YES" attributeType="String"/>
+        <attribute name="metaKeywords" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="numberInCart" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="price" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="productDescription" optional="YES" attributeType="String"/>
+        <attribute name="rankingScore" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="sku" optional="YES" attributeType="String"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="sku"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <elements>
+        <element name="Categories" positionX="-63" positionY="-18" width="128" height="58"/>
+        <element name="CatLinearCore" positionX="-54" positionY="108" width="128" height="148"/>
+        <element name="ProductCore" positionX="-54" positionY="0" width="128" height="328"/>
+    </elements>
+</model>
