@@ -14,6 +14,8 @@ struct HomeViewNavigationBarLeadingItems: View {
     @Binding var showLogin:Bool
     var body: some View {
         HStack{
+            
+            Text("\(DefaultStore.currentStore?.rawValue ?? "") store")
 //
 //
 //            NavigationLink(destination: SearchViewController(mainCatID: -1)) {
@@ -39,7 +41,7 @@ struct HomeViewNavigationBarLeadingItems: View {
                 self.showLogin.toggle()
                 }){
                     if self.user.isLoggedIn{
-                        Text("hello \(self.user.name ?? "")")
+                        Text("\(self.user.name ?? "")")
                     } else {
                         Text("login")
                     }

@@ -2,12 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Privacy –  Location Always use Description</key>
-	<string>Allow user to select delivery address according to their location</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Help user to select thier delivery address according to their location</string>
-	<key>Location When in use usage Description  </key>
-	<string>Help user to select thier delivery address according to their location</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -26,6 +20,12 @@
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>Location When in use usage Description  </key>
+	<string>Help user to select thier delivery address according to their location</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Help user to select thier delivery address according to their location</string>
+	<key>Privacy –  Location Always use Description</key>
+	<string>Allow user to select delivery address according to their location</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

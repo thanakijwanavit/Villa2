@@ -56,7 +56,7 @@ struct TabBarControllerView: View {
 //                },
                 
                 TabBarElement(tabBarElementItem: .init(title: "Wallet", image: UIImage(systemName: "creditcard.fill")!, badge: 5.string)) {
-                    Tab4View()
+                    WalletMainView()
                 },
                 
                 TabBarElement(tabBarElementItem: .init(title: "Settings", image: UIImage(systemName: "gear")!)) {

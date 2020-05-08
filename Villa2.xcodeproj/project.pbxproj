@@ -115,6 +115,9 @@
 		04CA2CBA2461F26500080BD2 /* IconsModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CA2CB92461F26500080BD2 /* IconsModifier.swift */; };
 		04CA2CBC2461F50700080BD2 /* DeliveryLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CA2CBB2461F50700080BD2 /* DeliveryLocation.swift */; };
 		04CA2CBE24628F1000080BD2 /* VillaLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CA2CBD24628F1000080BD2 /* VillaLocations.swift */; };
+		04CA2CC12463B99100080BD2 /* WalletMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CA2CC02463B99100080BD2 /* WalletMainView.swift */; };
+		04CA2CC32464ECD900080BD2 /* StoreSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CA2CC22464ECD900080BD2 /* StoreSelector.swift */; };
+		04CA2CC52464EE6900080BD2 /* DefaultStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CA2CC42464EE6900080BD2 /* DefaultStore.swift */; };
 		04DDE600242D4F4C00F8322C /* S3Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DDE5FF242D4F4C00F8322C /* S3Api.swift */; };
 		04DDE602242DC1B200F8322C /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DDE601242DC1B200F8322C /* StringExtension.swift */; };
 		04EAA454241C50FC008F9CD2 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EAA453241C50FC008F9CD2 /* TabViewController.swift */; };
@@ -256,6 +259,9 @@
 		04CA2CB92461F26500080BD2 /* IconsModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconsModifier.swift; sourceTree = "<group>"; };
 		04CA2CBB2461F50700080BD2 /* DeliveryLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryLocation.swift; sourceTree = "<group>"; };
 		04CA2CBD24628F1000080BD2 /* VillaLocations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VillaLocations.swift; sourceTree = "<group>"; };
+		04CA2CC02463B99100080BD2 /* WalletMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletMainView.swift; sourceTree = "<group>"; };
+		04CA2CC22464ECD900080BD2 /* StoreSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreSelector.swift; sourceTree = "<group>"; };
+		04CA2CC42464EE6900080BD2 /* DefaultStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultStore.swift; sourceTree = "<group>"; };
 		04DDE5FF242D4F4C00F8322C /* S3Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S3Api.swift; sourceTree = "<group>"; };
 		04DDE601242DC1B200F8322C /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		04EAA453241C50FC008F9CD2 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
@@ -308,6 +314,7 @@
 		04190AE6241CB5B000918BA6 /* bin */ = {
 			isa = PBXGroup;
 			children = (
+				049BF6C1241B6224006C5C45 /* HomeViewController.swift */,
 				049BF6E4241B833E006C5C45 /* ProductImage.swift */,
 				0440C92E241CBC0100A6EA73 /* InnerProductImage.swift */,
 				0440C930241CBCEE00A6EA73 /* ProductImageBackground.swift */,
@@ -522,6 +529,7 @@
 				04A951D52429D2E600180172 /* Filters */,
 				049BF6DE241B6597006C5C45 /* SampleData */,
 				04CA2CBD24628F1000080BD2 /* VillaLocations.swift */,
+				04CA2CC42464EE6900080BD2 /* DefaultStore.swift */,
 			);
 			name = DataSources;
 			path = ../../villaEcommerce/villaEcommerce/DataSources;
@@ -533,6 +541,7 @@
 				049BF6BF241B6106006C5C45 /* MenuView.swift */,
 				049BF6C6241B6392006C5C45 /* LoginView.swift */,
 				049BF6C7241B6392006C5C45 /* ProfilePage.swift */,
+				04CA2CC22464ECD900080BD2 /* StoreSelector.swift */,
 				04CA2CBB2461F50700080BD2 /* DeliveryLocation.swift */,
 				04CA2CB42461E84F00080BD2 /* StoreFinder.swift */,
 				049BF6DF241B6985006C5C45 /* ActionList.swift */,
@@ -685,6 +694,7 @@
 				04190ADB241C938D00918BA6 /* tabViewElements */,
 				04F48D39241C5B5800954DD9 /* Tab1HomeView */,
 				0489F43F24476E4B0017A146 /* ChatView */,
+				04CA2CBF2463B97400080BD2 /* wallet */,
 				049BF6BE241B60CA006C5C45 /* SettingsView */,
 				04F7DD4C24309CA6009B7852 /* HelperViews */,
 				049BF6E3241B8326006C5C45 /* Image */,
@@ -797,6 +807,14 @@
 			path = ImageModifier;
 			sourceTree = "<group>";
 		};
+		04CA2CBF2463B97400080BD2 /* wallet */ = {
+			isa = PBXGroup;
+			children = (
+				04CA2CC02463B99100080BD2 /* WalletMainView.swift */,
+			);
+			path = wallet;
+			sourceTree = "<group>";
+		};
 		04EDE71E241E50D700F82FA6 /* Tab2SearchView */ = {
 			isa = PBXGroup;
 			children = (
@@ -815,7 +833,6 @@
 			children = (
 				04A4A46A241B2A320025FB50 /* HomeViewNavigationController.swift */,
 				049BF6E9241B8AA6006C5C45 /* NavigationBar */,
-				049BF6C1241B6224006C5C45 /* HomeViewController.swift */,
 				04A4A47B241B2A690025FB50 /* Body */,
 				04AB66AC241B996700388CA5 /* CartView */,
 				04EDE71E241E50D700F82FA6 /* Tab2SearchView */,
@@ -941,6 +958,7 @@
 				048A7B02243CB13300D208CC /* ProductCoreCollectionViewTable.swift in Sources */,
 				0424071E243C053300951D17 /* DarkSubViewPreviewModifier.swift in Sources */,
 				049BF6C8241B6392006C5C45 /* LoginView.swift in Sources */,
+				04CA2CC52464EE6900080BD2 /* DefaultStore.swift in Sources */,
 				04A4A469241B2A320025FB50 /* Villa2.xcdatamodeld in Sources */,
 				049BF6D6241B64D6006C5C45 /* EnvironmentWindowKey.swift in Sources */,
 				04A4A48C241B2B0E0025FB50 /* CartRaw.swift in Sources */,
@@ -979,6 +997,7 @@
 				049BF6E5241B833E006C5C45 /* ProductImage.swift in Sources */,
 				049BF6DB241B64D6006C5C45 /* Keychain.swift in Sources */,
 				04CA2CB72461F22B00080BD2 /* ImageModifier.swift in Sources */,
+				04CA2CC32464ECD900080BD2 /* StoreSelector.swift in Sources */,
 				04240723243C064C00951D17 /* TextTitleViewModifier.swift in Sources */,
 				04CA2CBE24628F1000080BD2 /* VillaLocations.swift in Sources */,
 				049CA4A624402E6A00AC4D94 /* SettingsMainView.swift in Sources */,
@@ -990,6 +1009,7 @@
 				04240729243C081400951D17 /* MultilineTextModifier.swift in Sources */,
 				049BF6DD241B64D6006C5C45 /* WebApi.swift in Sources */,
 				0428ADB22446A60800AD02B2 /* FilterIconsNavigationLinkTable.swift in Sources */,
+				04CA2CC12463B99100080BD2 /* WalletMainView.swift in Sources */,
 				04BD8306243678F100A9F174 /* CartQuantityButton.swift in Sources */,
 				04BD830424366A4800A9F174 /* ImageExtension.swift in Sources */,
 				04A4A47D241B2A960025FB50 /* HomeView.swift in Sources */,
@@ -1175,7 +1195,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.25.7;
+				MARKETING_VERSION = 1.26.3;
 				PRODUCT_BUNDLE_IDENTIFIER = tenxor.Villa2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1198,7 +1218,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.25.7;
+				MARKETING_VERSION = 1.26.3;
 				PRODUCT_BUNDLE_IDENTIFIER = tenxor.Villa2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

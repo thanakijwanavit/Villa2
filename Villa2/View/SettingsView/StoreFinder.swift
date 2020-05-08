@@ -55,7 +55,7 @@ struct StoreFinder: View {
     }
 }
 
-struct StoreSelector_Previews: PreviewProvider {
+struct StoreFinder_Previews: PreviewProvider {
     static var previews: some View {
         StoreFinder()
     }

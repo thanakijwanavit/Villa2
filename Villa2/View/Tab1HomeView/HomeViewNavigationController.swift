@@ -32,15 +32,6 @@ struct HomeViewNavigationController: View {
     
     var body: some View {
         
-
-//        let drag = DragGesture()
-//            .onEnded {
-//                if $0.translation.width < -100 {
-//                    withAnimation {
-//                        self.showMenu = false
-//                    }
-//                }
-//            }
         
         return NavigationView {
             GeometryReader { g in
@@ -49,9 +40,6 @@ struct HomeViewNavigationController: View {
                     self.mainHomeView(g: g)
                     
                 }
-                
-                
-                
                 .onAppear(perform: {
                     debugPrint("location selector is \(self.showLocationSelector)")
                 })
@@ -77,7 +65,8 @@ struct HomeViewNavigationController: View {
                 
             }
         }.sheet(isPresented: self.$showLocationSelector) {
-                            DeliveryLocation(isDisplayed: self.$showLocationSelector)
+//                            DeliveryLocation(isDisplayed: self.$showLocationSelector)
+            StoreSelector(isDisplayed: self.$showLocationSelector)
                             
         //                    LoginView(showLogin:self.$showLogin)
                     
